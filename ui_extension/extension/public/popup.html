@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>PTIT AntiPhishing Extension Popup</title>
+	<link rel="stylesheet" type="text/css" href="./dist.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body class="w-[400px] text-base font-sans bg-zinc-800 text-zinc-50">
+	<div class="flex flex-col gap-3">
+		<header id="popup-header" class="flex flex-row gap-2 items-center justify-between p-4 bg-blue-700 text-white">
+			<div class="flex flex-row gap-2 items-center">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-fish-off"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M16.69 7.44a6.973 6.973 0 0 0 -1.63 3.635" /><path d="M2 9.504c5.307 5.948 10.293 8.57 14.597 7.1m2.583 -1.449c.988 -.788 1.93 -1.836 2.82 -3.153c-3 -4.443 -6.596 -5.812 -10.564 -4.548m-2.764 1.266c-2.145 1.266 -4.378 3.215 -6.672 5.786" /><path d="M18 11v.01" /><path d="M11.153 11.169c-.287 .777 -.171 1.554 .347 2.331" /><path d="M3 3l18 18" /></svg>
+				<span class="flex flex-col">
+					<h1 class="font-semibold">PTIT AntiPhishing</h1>
+					<span class="text-sm">Surfing the web safely with PTIT AntiPhishing</span>
+				</span>
+			</div>
+			<div class="cursor-help" title="An extension protects users from active phishing threats">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-shield-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M11.998 2l.118 .007l.059 .008l.061 .013l.111 .034a.993 .993 0 0 1 .217 .112l.104 .082l.255 .218a11 11 0 0 0 7.189 2.537l.342 -.01a1 1 0 0 1 1.005 .717a13 13 0 0 1 -9.208 16.25a1 1 0 0 1 -.502 0a13 13 0 0 1 -9.209 -16.25a1 1 0 0 1 1.005 -.717a11 11 0 0 0 7.531 -2.527l.263 -.225l.096 -.075a.993 .993 0 0 1 .217 -.112l.112 -.034a.97 .97 0 0 1 .119 -.021l.115 -.007zm3.71 7.293a1 1 0 0 0 -1.415 0l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.32 1.497l2 2l.094 .083a1 1 0 0 0 1.32 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z" /></svg>
+			</div>
+		</header>
+		<main class="text-sm mt-[-0.75rem] flex flex-col">
+			<div id="website-status" class="flex flex-col p-4 border-b border-zinc-700 text-center">
+				<span class="font-semibold text-lg">Website Status</span>
+				<span id="status">Checking...</span>
+				<div id="warning"></div>
+			</div>
+			<div id="website-report"></div>
+			<dl class="p-4 flex flex-col gap-2 items-start">
+				<div class="flex flex-col">
+					<dt>Domain</dt>
+					<dd id="base-url" class="font-mono text-xs text-zinc-300"></dd>
+				</div>
+				<div class="flex flex-col">
+					<dt>Full URL</dt>
+					<dd id="full-url" class="font-mono text-xs break-all text-zinc-300"></dd>
+				</div>
+			</dl>
+		</main>
+	</div>
+	<script src="../src/popup.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+Total files: 10000
+Correct predictions: 8649
+Incorrect predictions: 1351
+Accuracy: 86.49%

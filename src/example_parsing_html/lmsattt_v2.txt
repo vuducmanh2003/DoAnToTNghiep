@@ -1,0 +1,58 @@
+[TITLE] hệ thống quản lý học tập - khoa attt: đăng nhập vào trang
+[HEADINGS][H1] hệ thống quản lý học tập - khoa attt: đăng nhập
+[PARAGRAPHS] bạn quên kí danh hoặc mật khẩu?
+[PARAGRAPHS] có thể có một số khoá học cho phép khách vãng lai truy cập
+[LINKS][TEXT] chuyển tới nội dung chính
+[LINKS][HREF] https://lmsattt.ptit.edu.vn/login/index.php#maincontent
+[LINKS][TEXT] bạn quên kí danh hoặc mật khẩu?
+[LINKS][HREF] https://lmsattt.ptit.edu.vn/login/forgot_password.php
+[LINKS][TEXT] trang chủ
+[LINKS][HREF] https://lmsattt.ptit.edu.vn/
+[FORMS][INPUTS][TYPE] hidden
+[FORMS][INPUTS][NAME] anchor
+[FORMS][INPUTS][TYPE] hidden
+[FORMS][INPUTS][NAME] logintoken
+[FORMS][INPUTS][TYPE] text
+[FORMS][INPUTS][NAME] username
+[FORMS][INPUTS][PLACEHOLDER] Tên tài khoản
+[FORMS][INPUTS][TYPE] password
+[FORMS][INPUTS][NAME] password
+[FORMS][INPUTS][PLACEHOLDER] Mật khẩu
+[FORMS][INPUTS][TYPE] checkbox
+[FORMS][INPUTS][NAME] rememberusername
+[FORMS][INPUTS][LABEL] nhớ tên tài khoản
+[FORMS][BUTTONS][TEXT] đăng nhập
+[FORMS][BUTTONS][TYPE] submit
+[FORMS][BUTTONS][ID] loginbtn
+[FORMS][BUTTONS][CLASS] btn btn-primary btn-block mt-3
+[FORMS][INPUTS][TYPE] hidden
+[FORMS][INPUTS][NAME] logintoken
+[FORMS][INPUTS][TYPE] hidden
+[FORMS][INPUTS][NAME] username
+[FORMS][INPUTS][TYPE] hidden
+[FORMS][INPUTS][NAME] password
+[FORMS][BUTTONS][TEXT] đăng nhập với tư cách khách
+[FORMS][BUTTONS][TYPE] submit
+[FORMS][BUTTONS][CLASS] btn btn-secondary btn-block
+[FOOTER] bạn chưa đăng nhập.trang chủ
+[META][HTTP-EQUIV] content-type
+[META][CONTENT] text/html; charset=utf-8
+[META][NAME] keywords
+[META][CONTENT] moodle, hệ thống quản lý học tập - khoa attt: đăng nhập vào trang
+[META][NAME] robots
+[META][CONTENT] noindex
+[META][NAME] viewport
+[META][CONTENT] width=device-width, initial-scale=1.0
+[LABELS][FOR] username
+[LABELS][TEXT] tên tài khoản
+[LABELS][FOR] password
+[LABELS][TEXT] mật khẩu
+[LABELS][FOR] rememberusername
+[LABELS][TEXT] nhớ tên tài khoản
+[IMAGES][SRC] ./example_files/ptit-logo.png
+[IMPORTANT_SECTIONS][TAG] div
+[IMPORTANT_SECTIONS][CLASS] card
+[IMPORTANT_SECTIONS][TEXT] hệ thống quản lý học tập - khoa attt: đăng nhậptên tài khoảnmật khẩunhớ tên tài khoảnđăng nhậpbạn quên kí danh hoặc mật khẩu?trình duyệt của bạn cần phải mở chức năng quản lí cookiecó thể có một số khoá học cho phép khách vãng lai truy cậpđăng nhập với tư cách khách
+[IMPORTANT_SECTIONS][TAG] div
+[IMPORTANT_SECTIONS][CLASS] container
+[IMPORTANT_SECTIONS][TEXT] bạn chưa đăng nhập.trang chủ

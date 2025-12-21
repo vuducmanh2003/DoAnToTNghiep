@@ -1,0 +1,45 @@
+META: { name: "", content: "text/html; charset=UTF-8" }
+TITLE: { text: "Hệ thống quản lý học tập - Khoa ATTT: Đăng nhập vào trang" }
+META: { name: "keywords", content: "moodle, Hệ thống quản lý học tập - Khoa ATTT: Đăng nhập vào trang" }
+SCRIPT: { src: "./example_files/combo(1)" }
+SCRIPT: { src: "./example_files/combo(2)" }
+SCRIPT: { <SCRIPT INLINE> }
+SCRIPT: { <SCRIPT INLINE> }
+META: { name: "robots", content: "noindex" }
+META: { name: "viewport", content: "width=device-width, initial-scale=1.0" }
+SCRIPT: { <SCRIPT INLINE> }
+SCRIPT: { src: "./example_files/requirejs.php" }
+SCRIPT: { src: "./example_files/javascript.php" }
+LINK: { text: "Chuyển tới nội dung chính", href: "https://lmsattt.ptit.edu.vn/login/index.php#maincontent" }
+SCRIPT: { src: "./example_files/javascript(1).php" }
+SCRIPT: { src: "./example_files/javascript(2).php" }
+SCRIPT: { src: "./example_files/combo(3)" }
+SCRIPT: { src: "./example_files/javascript(3).php" }
+SCRIPT: { <SCRIPT INLINE> }
+IMG: { src: "./example_files/ptit-logo.png", alt: "<EMPTY>" }
+FORM: { action: "https://lmsattt.ptit.edu.vn/login/index.php", method: "post" }
+INPUT: { type: "hidden", name: "anchor", placeholder: "" }
+SCRIPT: { <SCRIPT INLINE> }
+INPUT: { type: "hidden", name: "logintoken", placeholder: "" }
+LABEL: { for: "username", "text": "Tên tài khoản" }
+INPUT: { type: "text", name: "username", placeholder: "Tên tài khoản" }
+LABEL: { for: "password", "text": "Mật khẩu" }
+INPUT: { type: "password", name: "password", placeholder: "Mật khẩu" }
+CHECKBOX: { label: "Nhớ tên tài khoản", input: { type: "checkbox", name: "rememberusername", placeholder: "" } }
+LABEL: { for: "rememberusername", "text": "Nhớ tên tài khoản" }
+BUTTON: { text: "Đăng nhập" }
+P: { text: "Bạn quên kí danh hoặc mật khẩu?" }
+LINK: { text: "Bạn quên kí danh hoặc mật khẩu?", href: "https://lmsattt.ptit.edu.vn/login/forgot_password.php" }
+LINK: { text: "<EMPTY>", href: "No URL provided" }
+P: { text: "Có thể có một số khoá học cho phép khách vãng lai truy cập" }
+FORM: { action: "https://lmsattt.ptit.edu.vn/login/index.php", method: "post" }
+INPUT: { type: "hidden", name: "logintoken", placeholder: "" }
+INPUT: { type: "hidden", name: "username", placeholder: "" }
+INPUT: { type: "hidden", name: "password", placeholder: "" }
+BUTTON: { text: "Đăng nhập với tư cách khách" }
+LINK: { text: "Trang chủ", href: "https://lmsattt.ptit.edu.vn/" }
+SCRIPT: { <SCRIPT INLINE> }
+SCRIPT: { src: "./example_files/javascript(4).php" }
+SCRIPT: { <SCRIPT INLINE> }
+SCRIPT: { <SCRIPT INLINE> }
+SCRIPT: { <SCRIPT INLINE> }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PTIT AntiPhising Extension: Phishing Warning</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-gray-50 font-sansInter" id="freephishing-warning-page">
+	<div class="inline-flex flex-row items-start gap-8 p-24">
+		<div class="inline-flex rounded-2xl bg-red-500 p-4 text-white">
+			<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-alert-triangle"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 9v4" /><path d="M10.363 3.591l-8.106 13.534a1.914 1.914 0 0 0 1.636 2.871h16.214a1.914 1.914 0 0 0 1.636 -2.87l-8.106 -13.536a1.914 1.914 0 0 0 -3.274 0z" /><path d="M12 16h.01" /></svg>
+		</div>
+		<div class="flex flex-col gap-4">
+			<header class="flex flex-col items-start gap-2">
+				<h1 class="text-3xl font-medium text-red-500">Phishing Warning</h1>
+				<span class="flex flex-row gap-1 text-gray-500">
+					<span>Dangerous URL:</span>
+					<span class="truncate" id="reported-url"></span>
+				</span>
+			</header>
+			<div class="flex flex-col gap-2">
+				<p class="max-w-[80ch] text-lg">
+					This website has been detected as dangerous!!! <br>
+					For your safety, you should not go any further. Please do not access to this website.
+				</p>
+			</div>
+			<footer class="flex flex-row justify-end gap-4">
+				<button class="rounded-md bg-blue-500 px-4 py-2 font-medium text-white" id="mark-safe">Continue visiting this website</button>
+				<button class="rounded-md bg-red-500 px-4 py-2 font-medium text-white" id="close-tab">Close tab</button>
+			</footer>
+		</div>
+	</div>
+	</div>
+</body>
