@@ -19,13 +19,13 @@ Tải xuống hoặc clone repo này về một máy Linux (Ubuntu 22.04 LTS / U
     
     sudo dpkg -i antiphishing_1.0.deb
 
-**Note:** Các gói python3 (phiên bản 3.10) và python3-pip cần được cài đặt rồi, sẽ mất một vài phút để cài đặt xong file **`antiphishing_1.0.deb`**.
+**Chú ý:** Các gói python3 (phiên bản 3.10) và python3-pip cần được cài đặt rồi, sẽ mất một vài phút để cài đặt xong file **`antiphishing_1.0.deb`**.
 
 Sau khi cài đặt xong, server sẽ luôn luôn chạy như một dịch vụ nền trong hệ điều hành Linux. Để kiểm tra trạng thái của server, sử dụng câu lệnh sau:
 
     sudo systemctl status antiphishing.service
 
-**Note:** Có thể sẽ gặp lỗi không import được thư viện chứa mô hình MobileBERT. Điều này xảy ra là do pip3 sẽ tự động cài gói transformers mới nhất trong khi thư viện chứa mô hình MobileBERT chỉ có ở các gói cũ. Để xử lý lỗi này, hãy gỡ cài đặt gói transformers hiện có và cài đặt lại gói transformers 4.44.0 bằng các câu lệnh sau:
+**Chú ý:** Có thể sẽ gặp lỗi không import được thư viện chứa mô hình MobileBERT. Điều này xảy ra là do pip3 sẽ tự động cài gói transformers mới nhất trong khi thư viện chứa mô hình MobileBERT chỉ có ở các gói cũ. Để xử lý lỗi này, hãy gỡ cài đặt gói transformers hiện có và cài đặt lại gói transformers 4.44.0 bằng các câu lệnh sau:
 
     sudo pip uninstall transformers
     sudo pip install transformers==4.44.0
